@@ -6,11 +6,14 @@
         <title>Insert title here</title>
     </head>
     <body>
-        <label for="title">タイトル</label><br />
+        <label for="title">タスクタイトル</label><br />
         <input type="text" name="title" value="${task.title}" />
         <br /><br />
 
-        <label for="content">タスク</label><br />
+        <label for="content">タスク内容</label><br />
+        <input type="text" name="content" value="${task.content}" />
+        <br /><br />
+
         <input type="hidden" name="_token" value="${_token}" />
         <button type="submit">投稿</button>
     </body>
